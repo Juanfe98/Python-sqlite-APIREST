@@ -2,6 +2,8 @@ import sqlite3
 from flask_restful import Resource, reqparse
 
 
+# This function does not recieves the Resource cause is not gonna be called 
+# outside using the API client
 class User():
     TABLE_NAME = 'users'
 

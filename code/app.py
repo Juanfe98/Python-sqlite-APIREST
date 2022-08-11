@@ -18,5 +18,8 @@ api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')
 api.add_resource(UserRegister, '/register')
 
+# We do this because if we import something from app in another file
+# we wont want this to be executed
+
 if __name__ == '__main__':
     app.run(debug=True)  # important to mention debug=True

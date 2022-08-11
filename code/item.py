@@ -48,6 +48,7 @@ class Item(Resource):
 
         return item
 
+    # In the classmethos we recieve cls as argument and get the reference to the class
     @classmethod
     def insert(cls, item):
         connection = sqlite3.connect('data.db')
